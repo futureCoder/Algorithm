@@ -16,8 +16,19 @@ TEST_CASE("Factorial function tests", "[factorial]") {
     REQUIRE(Factorial(10) == 3628800);
 }
 
-TEST_CASE("Another set of tests", "[misc]") {
-    REQUIRE(true);
-    REQUIRE(42 == 42);
-    REQUIRE_FALSE(42 == 42);
+// TEST_CASE("Another set of tests", "[misc]") {
+//     REQUIRE(true);
+//     REQUIRE(42 == 42);
+//     // REQUIRE_FALSE(42 == 42);
+// }
+
+TEST_CASE("vector remove test", "[vector]") {
+    std::vector<int> nums = {1,2,3,4,5};
+    for (auto iter = nums.begin(); iter != nums.end();) {
+        iter = nums.erase(iter);
+    }
+    for (auto i : nums) {
+        std::cout << i << std::endl;
+    }
+    REQUIRE(nums.empty());
 }
