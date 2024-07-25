@@ -1,7 +1,5 @@
 #include <vector>
 
-
-
 class QuickSort {
 public:
     static void sort(std::vector<int>& nums) {
@@ -40,7 +38,7 @@ private:
         return i;
     }
     static int _pivot(int begin, int end) {
-        // ·µ»Ø[begin,end)Çø¼äÄÚµÄËæ»úÊı
+        // è¿”å›[begin,end)åŒºé—´å†…çš„éšæœºæ•°
         int range = end - begin;
         return std::rand() % range + begin;
     }

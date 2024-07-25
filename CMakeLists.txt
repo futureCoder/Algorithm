@@ -17,6 +17,8 @@ add_executable(tests examples/ut_with_catch2.cpp)
 target_link_libraries(tests Catch2::Catch2)
 # 在测试目标中链接Catch2
 
-add_executable(quick_sort src/sorting/test_quick_sort.cpp)
+add_executable(quick_sort src/sorting/quick_sort_test.cpp
+        src/sorting/heap_sort.h
+        src/sorting/heap_sort_test.cpp)
 target_link_libraries(quick_sort Catch2::Catch2)
 # 在测试目标中链接Catch2
