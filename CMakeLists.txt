@@ -36,5 +36,6 @@ add_executable(leetcode
 target_link_libraries(leetcode Catch2::Catch2)
 
 add_executable(custom
-        src/custom/max_product_sub_squences/max_product_sub_squences.cpp
+        src/leetcode/editor/cn/0416.partition-equal-subset-sum_test.cpp
 )
+target_link_libraries(custom Catch2::Catch2)
